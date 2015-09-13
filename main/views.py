@@ -1,7 +1,7 @@
 ﻿#importings
 from django.shortcuts import render_to_response, redirect, get_object_or_404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from .models import Cardstick
+from .models import Cardstick, Mail
 from django.core.context_processors import csrf
 from django.core.urlresolvers import reverse, reverse_lazy
 from django.contrib.auth.decorators import login_required
@@ -86,4 +86,18 @@ def activate(request):
 		args['message'] = message
 
 	return render_to_response('main/activate.html',args)
+
+def message(request):
+	#initialize variables
+	args={}
+	args.update(csrf(request))
+	if request.POST:
+		name = request.POST['name']
+		email = request.POST['email']
+		subject = request.POST['subject']
+		message = request.POST['message']
+		mail = Mail.objects.create(name=name,email=email,subject=subject,message=message)
+		mail.save()
+	return redirect(reverse('main:main'))
+
 
