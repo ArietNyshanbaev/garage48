@@ -51,7 +51,7 @@
                     <!-- logo -->
                     <div class="navbar-brand">
                         <a class="smooth-scroll" data-section="#home" href="#home" >
-                            <h4 style="color:white; font-size:24px;">iLost.Kg</h4>
+                            <h4 style="color:white; font-size:24px;"><span style="color:red">i</span>Lost.Kg</h4>
                         </a>
                     </div>
                     <!-- /logo -->
@@ -62,7 +62,7 @@
                     <div class="main-menu">
                         <ul id="nav" class="nav navbar-nav">
                             <li class="scroll"><a href="#about" data-section="#about">О нас</a></li>
-                            <li class="scroll"><a href="#portfolio" data-section="features">Как это работает</a></li>
+                            <li class="scroll"><a href="#portfolio" data-section="#portfolio">Как это работает</a></li>
                             <li class="scroll"><a href="#contact-area" data-section="#contact-area">Обратная связь</a></li>   
                         </ul>
                     </div>
@@ -74,7 +74,8 @@
 
     <section id="main-slider">
     <div class="container">
-        <div class="buttons-wrapper" style="position: absolute; top:40%; left:35%; z-index:1000; background-color:RGBA(0,0,0,0.41); border:5px solid RGBA(0,0,0,0.41);">
+        <div class="buttons-wrapper" style="position: absolute; top:50%; left:35%; z-index:1000; background-color:RGBA(0,0,0,0.41); border:5px solid RGBA(0,0,0,0.41);">
+
             <div class="buttons-wrapper-inner">
                 <div class="activate-id-code">
                     <form method="post" action="{% url 'main:check_activation'%}" id="activateCode" style="display:inline">
@@ -102,12 +103,13 @@
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
                                 <div class="carousel-content text-center">
-                                    <!--<h2>Accessible design is good design. Only with <span>Color</span>.</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna incididunt ut labore aliqua. </p>
-                                    <br><br>-->
-                                    
+                                    <br><br><br><br>
+                                    <div style="background-color:RGBA(255,255,255,0.9);"><h1>Добро пожаловать в наш проект <span style="color:red">i</span>LOST.kg!</h1>
+                                        <p style="font-size:20px; color:#272727">Защита от потери ценных вещей</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -118,15 +120,15 @@
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-12">
+                        <div class="col-md-2"></div>
+                            <div class="col-md-8">
                                 <div class="carousel-content text-center">
-                                <!--
-                                    <h2>OUR MAIN GOAL IS CONTINUOUSLY SATISFY OUR <span>Clients</span></h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna incididunt ut labore aliqua. </p>
-                                    <br><br>
-                                    -->
-                                </div>
+                                <br><br><br><br>
+                                    <div style="background-color:RGBA(255,255,255,0.9);"><h1>Добро пожаловать в наш проект <span style="color:red">i</span>LOST.kg!</h1>
+                                        <p style="font-size:20px; color:#272727">Защита от потери ценных вещей</p>
+                                    </div>
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -135,14 +137,13 @@
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-12">
+                        <div class="col-md-2"></div>
+                            <div class="col-md-8">
                                 <div class="carousel-content text-center">
-                                <!--
-                                    <h2>Accessible design is good design. Only with <span>Color</span>.</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna incididunt ut labore aliqua. </p>
-                                    <br><br>
-                                    -->
-                                </div>
+                               <br><br><br><br>
+                                    <div style="background-color:RGBA(255,255,255,0.9);"><h1>Добро пожаловать в наш проект <span style="color:red">i</span>LOST.kg!</h1>
+                                        <p style="font-size:20px; color:#272727">Защита от потери ценных вещей</p>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -155,22 +156,15 @@
     <section id="about">
         <div class="container">
 
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">WELCOME TO OUR COMPANY</h2>
-                <p class="text-center wow fadeInDown">Lalalal llalal lalala lalala lalalalalala lalalalala lalalallalalalala lalalalallalaal</p>
-            </div>
-
+            
             <div class="row">
                 
 
-                <div class="col-sm-6 wow fadeInRight">
-                    <h3 class="column-title">A Little More About Us</h3>
-                    <p>Yahoo google sputnik yandex baidu </p>
-
-                    <a class="btn btn-primary" href="#">Discover Us</a>
-
+                <div class="col-sm-9 wow fadeInRight">
+                    <img height="400" width="600" src="{% static 'images/logo.jpg'%}">
                 </div>
-                <div class="col-sm-6 wow fadeInLeft">
+                <div class="col-sm-3 wow fadeInLeft">
+                <br><br><br><br>
                     <img class="img-responsive" src="{% static 'images/card.png' %}" alt="">
                 </div>
             </div>
@@ -187,7 +181,7 @@
         <div class="container">
 
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Как работает iLost</h2>
+                <h2 class="section-title text-center wow fadeInDown">Как работает <span>i</span>Lost</h2>
             </div>
 
             <div class="row">
@@ -197,8 +191,8 @@
                             <div class="features-icon">
                                 <img height="35" width="35" src="{% static 'images/buy.png'%}">
                             </div>
-                            <h3 class="features-title font-alt">Покупка</h3>
-                            Владелец ценной вещи приобретает наклейку с уникальным кодом активации
+                            <h3 class="features-title font-alt"><span style="color:red">П</span>окупка</h3>
+                            Владелец ценной вещи приобретает наклейку с уникальным кодом активации онлайн и во всех киосках
                         </div>
                     </div>
 
@@ -207,8 +201,8 @@
                             <div class="features-icon">
                                 <img height="35" width="35" src="{% static 'images/activate.png'%}">
                             </div>
-                            <h3 class="features-title font-alt">Активация</h3>
-                            Владелец активирует данный код на нашем сайте и наклеивает этикетку на зарегестрированную вещь
+                            <h3 class="features-title font-alt"><span style="color:red">А</span>ктивация</h3>
+                            Владелец активирует данный код на нашем сайте и наклеивает этикетку на зарегистрированную вещь
                         </div>
                     </div>
 
@@ -217,8 +211,8 @@
                             <div class="features-icon">
                                 <img height="35" width="35" src="{% static 'images/lost.png'%}">
                             </div>
-                            <h3 class="features-title font-alt">Пропажа</h3>
-                            В случае пропажи у владельца будет шанс вернуть свой потерянные вещи благодаря этикеткам
+                            <h3 class="features-title font-alt"><span style="color:red">П</span>ропажа</h3>
+                            В случае пропажи у владельца будет больше шансов оперативно вернуть свои потерянные вещи благодаря этикеткам
                         </div>
                     </div>
 
@@ -227,8 +221,8 @@
                             <div class="features-icon">
                                 <img height="35" width="35" src="{% static 'images/found.png'%}">
                             </div>
-                            <h3 class="features-title font-alt">Находка</h3>
-                            Человек, сообщивший о находке зарегистрированной вещи, заходит на наш веб-сайт и на главной странице вводит в форму код с этикетки и свой контактные данные (E-mail и Номер телефона)
+                            <h3 class="features-title font-alt"><span style="color:red">Н</span>аходка</h3>
+                            Человек, сообщивший о находке зарегистрированной вещи, заходит на наш веб-сайт и на главной странице вводит в форму код с этикетки и свои контактные данные (E-mail и номер телефона)
                         </div>
                     </div>
 

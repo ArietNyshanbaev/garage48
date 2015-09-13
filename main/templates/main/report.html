@@ -49,27 +49,26 @@
                     <!-- /responsive nav button -->
                     
                     <!-- logo -->
-                    <div class="navbar-brand">
-                        <a class="smooth-scroll" data-section="#home" href="#home" >
-                            <h4 style="color:white; font-size:24px;">iLost.Kg</h4>
+                    <div>
+                        <a href="{% url 'main:main'%}" >
+                            <h4 style="color:white; font-size:24px;"><span style="color:red">i</span>Lost.Kg</h4>
                         </a>
                     </div>
                     <!-- /logo -->
                 </div>
 
-                <!-- main nav -->
+               <!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <div class="main-menu">
+                    <div >
                         <ul id="nav" class="nav navbar-nav">
-                            <li class="scroll"><a href="#home" data-section="#home">Home</a></li>
-                            <li class="scroll"><a href="#about" data-section="#about">About</a></li>
-                            <li class="scroll"><a href="#features" data-section="features">Feature</a></li>
-                            <li class="scroll"><a href="#services" data-section="#services">Services</a></li>
-                            <li class="scroll"><a href="#contact-area" data-section="#contact-area">Contact</a></li>   
+                            <li class="scroll"><a href="{%url 'main:main'%}#about" data-section="#about">О нас</a></li>
+                            <li class="scroll"><a href="{%url 'main:main'%}#portfolio" data-section="#portfolio">Как это работает</a></li>
+                            <li class="scroll"><a href="{%url 'main:main'%}#contact-area" data-section="#contact-area">Обратная связь</a></li>   
                         </ul>
                     </div>
                 </nav>
                 <!-- /main nav -->
+            
                 
             </div>
         </header>
@@ -87,9 +86,9 @@
                     <div class="row">
                         <div class="col-md-3"></div>
                         <div class="col-md-3">
-                            <p>Name :</p>
+                            <p>Имя :</p>
                             <p>Email :</p>
-                            <p>Telephone :</p>
+                            <p>Номер телефона :</p>
                         </div>
                         <div class="col-md-5">
                             <p>{{info.name}}</p>
