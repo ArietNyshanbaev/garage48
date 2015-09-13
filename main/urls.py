@@ -8,6 +8,7 @@ urlpatterns = patterns('',
     url(r'^check_activation$', 'main.views.check_activation',name='check_activation'),
     url(r'^report$', 'main.views.report',name='report'),
     url(r'^activate$', 'main.views.activate',name='activate'),
+    url(r'^message$', 'main.views.message',name='message'),
 
 
     # url(r'^category/(?P<category_id>.+)$', 'main.views.category',name='category'),

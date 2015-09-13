@@ -96,7 +96,7 @@ def message(request):
 		email = request.POST['email']
 		subject = request.POST['subject']
 		message = request.POST['message']
-		mail = Mail.objects.create(name=name,email=email,subject=subject,message=message)
+		mail = Mail.objects.create(name=name,email=email,title=subject,body=message)
 		mail.save()
 	return redirect(reverse('main:main'))
 
